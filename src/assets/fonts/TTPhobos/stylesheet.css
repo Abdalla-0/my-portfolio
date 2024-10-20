@@ -1,0 +1,117 @@
+@font-face {
+    font-family: 'TT Phobos Trial';
+    src: url('TTPhobosTrial-Black.woff2') format('woff2'),
+        url('TTPhobosTrial-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TT Phobos Trial';
+    src: url('TTPhobosTrial-Bold.woff2') format('woff2'),
+        url('TTPhobosTrial-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TT Phobos Trial';
+    src: url('TTPhobosTrial-BlackItalic.woff2') format('woff2'),
+        url('TTPhobosTrial-BlackItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TT Phobos Trial';
+    src: url('TTPhobosTrial-BoldItalic.woff2') format('woff2'),
+        url('TTPhobosTrial-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TT Phobos Trial';
+    src: url('TTPhobosTrial-ExtraBold.woff2') format('woff2'),
+        url('TTPhobosTrial-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TT Phobos Trial';
+    src: url('TTPhobosTrial-DemiBold.woff2') format('woff2'),
+        url('TTPhobosTrial-DemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TT Phobos Trial';
+    src: url('TTPhobosTrial-ExtraBoldItalic.woff2') format('woff2'),
+        url('TTPhobosTrial-ExtraBoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TT Phobos Trial';
+    src: url('TTPhobosTrial-Italic.woff2') format('woff2'),
+        url('TTPhobosTrial-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TT Phobos Trial Inline';
+    src: url('TTPhobosTrial-Inline.woff2') format('woff2'),
+        url('TTPhobosTrial-Inline.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TT Phobos Trial';
+    src: url('TTPhobosTrial-Light.woff2') format('woff2'),
+        url('TTPhobosTrial-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TT Phobos Trial';
+    src: url('TTPhobosTrial-LightItalic.woff2') format('woff2'),
+        url('TTPhobosTrial-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TT Phobos Trial Stencil';
+    src: url('TTPhobosTrial-Stencil.woff2') format('woff2'),
+        url('TTPhobosTrial-Stencil.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TT Phobos Trial';
+    src: url('TTPhobosTrial-Regular.woff2') format('woff2'),
+        url('TTPhobosTrial-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
