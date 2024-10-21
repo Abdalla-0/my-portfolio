@@ -1,19 +1,9 @@
 header {
-    a {
-        text-decoration: none;
+    padding-block: 8px;
 
-        &.active {
-            color: #0dcaf0 !important;
-
-        }
-    }
-
-
-    .firstRow {
+    .headerRow {
         display: flex;
         align-items: center;
-        justify-content: space-between;
-        padding-block: 8px;
+        gap: 16px;
     }
-
 }

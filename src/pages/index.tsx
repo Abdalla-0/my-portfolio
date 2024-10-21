@@ -1,12 +1,6 @@
-import Home from "@pages/Home";
-import Products from "@pages/Products";
-import AboutUs from "@pages/AboutUs";
-import Error from "@pages/Error";
+import Home from "@pages/Home/Home";
+import Projects from "@pages/Projects/Projects";
+import AboutUs from "@pages/About/About";
+import Error from "@pages/Error/Error";
 
-
-export {
-  Home,
-  Products,
-  AboutUs,
-  Error,
-};
+export { Home, Projects, AboutUs, Error };

@@ -1,7 +1,7 @@
 // Tools
 import ReactDOM from "react-dom/client";
-import "./index.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "./style.css";
 import AppRouter from "@routes/AppRouter";
 import { PersistGate } from "redux-persist/integration/react";
 import { store, persistor } from "@store/store";

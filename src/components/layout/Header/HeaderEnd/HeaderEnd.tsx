@@ -1,5 +1,14 @@
-const HeaderInlineEnd = () => {
-  return <div className="d-flex gap-3">Header</div>;
+import { Button, NavLink } from "react-bootstrap";
+import styles from "./style.module.css";
+const { headerEnd } = styles;
+const HeaderEnd = () => {
+  return (
+    <div className={headerEnd}>
+      <NavLink href="#contactSection">
+        <Button>Hire Me</Button>
+      </NavLink>
+    </div>
+  );
 };
 
-export default HeaderInlineEnd;
+export default HeaderEnd;
