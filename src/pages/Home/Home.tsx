@@ -1,10 +1,13 @@
 import Settings from "@components/common/Settings/Settings";
+import HeroSection from "./HeroSection/HeroSection";
+import { Container } from "react-bootstrap";
 
 const Home = () => {
   return (
-    <div>
+    <Container>
+      <HeroSection />
       <Settings />
-    </div>
+    </Container>
   );
 };
 

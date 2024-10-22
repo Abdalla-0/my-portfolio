@@ -1,10 +1,13 @@
 import styles from "./style.module.css";
 import { Link } from "react-router-dom";
-const { headerStart } = styles;
+import BrandIcon from "@assets/svg/brand.svg?react";
+const { headerStart, brandName, brandText } = styles;
 const HeaderStart = () => {
   return (
     <Link className={headerStart} to="/">
-      <h2>Abdalla</h2>
+      <BrandIcon />
+      <h2 className={brandName}>Abdalla</h2>
+      <span className={brandText}>FREELANCER</span>
     </Link>
   );
 };

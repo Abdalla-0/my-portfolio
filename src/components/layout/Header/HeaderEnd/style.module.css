@@ -1,1 +1,6 @@
-.headerEnd {}
+.headerEnd {
+    .btnAction {
+        padding-inline: 28px;
+        padding-block: 10px;
+    }
+}

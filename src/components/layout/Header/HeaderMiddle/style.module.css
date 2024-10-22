@@ -1,3 +1,38 @@
 .headerMiddle {
     margin-inline-start: auto;
+
+    .navBox {
+        margin-inline-end: 24px;
+    }
+
+    .linkItem {
+        position: relative;
+        color: var(--color-primary) !important;
+        font-weight: 500;
+
+        &:not(:last-child) {
+            margin-inline-end: 16px;
+        }
+
+
+        &::before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            inset-inline-end: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--color-primary);
+            transition: .3s;
+        }
+
+        &:is(:hover, .active) {
+            &::before {
+                width: 100%;
+                inset-inline-start: 0;
+            }
+        }
+
+    }
+
 }

@@ -1,0 +1,46 @@
+:root {
+
+    /* colors  */
+    --color-primary: #ffb700;
+    --color-text: "";
+    --color-primary-tint-30: color-mix(in srgb, var(--color-primary), white 30%);
+    --color-primary-tint-90: color-mix(in srgb, var(--color-primary), white 90%);
+    --color-primary-shade-10: color-mix(in srgb, var(--color-primary), black 10%);
+
+    /* transition  */
+    --transition-primary: .3s;
+}
+
+/* reset elements  */
+
+
+* {
+    box-sizing: border-box;
+    font-family: "Lato Regular";
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+span {
+    display: flex;
+}
+
+button {
+    border: none;
+    font-family: "TT Phobos Trial";
+    font-weight: 600;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+    font-family: "TT Phobos Trial";
+}
