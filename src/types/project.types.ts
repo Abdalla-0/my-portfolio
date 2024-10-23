@@ -1,0 +1,1 @@
+export type TProject = { id: number, img: string, title: string };

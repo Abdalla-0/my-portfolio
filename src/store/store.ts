@@ -1,7 +1,7 @@
 
 import { configureStore, combineReducers } from '@reduxjs/toolkit'
 
-// import products from './products/productsSlice';
+import projects from './projects/projectsSlice';
 
 import {
   persistStore,
@@ -27,7 +27,7 @@ const rootPresistConfig = {
 
 
 const rootReducer = combineReducers({
-  
+  projects,
 })
 
 const presistedReducer = persistReducer(rootPresistConfig, rootReducer)

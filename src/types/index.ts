@@ -1,5 +1,5 @@
 import { type TLoading } from './shared.types';
-import { type TProduct } from './product.types';
+import { type TProject } from './project.types';
 import { isString } from './guards';
 
-export {  TProduct, TLoading,  isString }
+export { TProject, TLoading, isString }
