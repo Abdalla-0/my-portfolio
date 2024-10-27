@@ -1,1 +1,1 @@
-export type TProject = { id: number, img: string, title: string };
+export type TProject = { id: number, img: string, title: string, description: string};

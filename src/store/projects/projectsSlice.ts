@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-import actGetData from "./actions/actGetData";
+import actGetProjects from "./actions/actGetProjects";
 import { TLoading, TProject, isString } from '@types';
 
 interface IProjectsState {
@@ -19,16 +19,16 @@ const projectsSlice = createSlice({
     initialState,
     reducers: {},
     extraReducers: (builder) => {
-        builder.addCase(actGetData.pending, (state) => {
+        builder.addCase(actGetProjects.pending, (state) => {
             state.loading = "pending"
             state.error = null
         })
-        builder.addCase(actGetData.fulfilled, (state, action) => {
+        builder.addCase(actGetProjects.fulfilled, (state, action) => {
             state.loading = "successeded"
             state.data = action.payload
 
         })
-        builder.addCase(actGetData.rejected, (state, action) => {
+        builder.addCase(actGetProjects.rejected, (state, action) => {
             state.loading = "failed"
             if (isString(action.payload)) {
                 state.error = action.payload;
@@ -36,5 +36,5 @@ const projectsSlice = createSlice({
         })
     }
 });
-// export const {  } = ProjectSlice.actions;
+export {actGetProjects};
 export default projectsSlice.reducer;
