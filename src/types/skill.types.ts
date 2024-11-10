@@ -1,0 +1,1 @@
+export type TSkill = { id: number, img: string, title: string };

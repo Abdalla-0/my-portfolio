@@ -1,21 +1,12 @@
 import { Heading } from "@components/common";
-import styles from "./style.module.css";
 import { Project } from "@components/ui";
-import { Col, Container, Row } from "react-bootstrap";
-const { worksSection } = styles;
+import {  Container } from "react-bootstrap";
 const WorksSection = () => {
   return (
-    <div className={`sectionArea withBG ${worksSection}`}>
+    <div className={`sectionArea withBG`}>
       <Container>
         <Heading title={"Our Recent Work"} />
-        <Row>
-          <Col md={6}>
-            <Project />
-          </Col>
-          <Col md={6}>
-            <Project />
-          </Col>
-        </Row>
+        <Project/>
       </Container>
     </div>
   );

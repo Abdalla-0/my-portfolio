@@ -1,8 +1,57 @@
 .project {
+    position: relative;
+    padding: 6px;
+    margin-block-end: 16px;
+    overflow: hidden;
+    border: 1px solid var(--color-primary);
+    transition: all 0.5s ease-in-out;
+    &:is(:hover) {
+        box-shadow: 0px 12px 40px 0px rgba(0, 0, 0, 0.16);
+        .imgBox:first-child {
+            transform: translatex(0) scalex(1);
+            opacity: 1;
+            filter: blur(0);
+        }
+        .imgBox:nth-child(2) {
+            transform: translatex(-50%) scalex(2);
+            opacity: 0;
+            filter: blur(10px);
+        }
+    }
+
     .imgBox {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        display: block;
+        transition: all 0.5s ease-in-out;
+        margin-block-end: 8px;
+
+        &:first-child {
+            position: absolute;
+            inset: 0;
+            transform: translatex(50%) scalex(2);
+            opacity: 0;
+            filter: blur(10px);
+            z-index: 1;
+        }
         img {
             width: 100%;
-            height: auto;
+            height: 234px;
         }
+    }
+
+    .text {
+        padding: 16px;
+    }
+
+    .title {
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .tale {
+        min-height: 72px;
+        margin-block-end: 0;
     }
 }

@@ -2,6 +2,7 @@
 import { configureStore, combineReducers } from '@reduxjs/toolkit'
 
 import projects from './projects/projectsSlice';
+import skills from './skills/skillsSlice';
 
 import {
   persistStore,
@@ -28,6 +29,7 @@ const rootPresistConfig = {
 
 const rootReducer = combineReducers({
   projects,
+  skills,
 })
 
 const presistedReducer = persistReducer(rootPresistConfig, rootReducer)
