@@ -1,0 +1,34 @@
+.contactSection {
+    position: relative;
+    border-radius: 16px;
+    background-color: #F7F7F7;
+
+    .contactSocial {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        position: absolute;
+        top: 32px;
+        inset-inline-end: 24px;
+        font-size: 20px;
+        .contactSocialItem {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+
+            .itemIcon {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 28px;
+                height: 28px;
+                padding: 8px;
+                border-radius: 6px;
+            }
+
+            .itemTitle {
+                color: var(--color-primary);
+            }
+        }
+    }
+}

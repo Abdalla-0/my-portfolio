@@ -10,7 +10,7 @@ const Ads = () => {
             <h2 className={title}>Let’s Work together on your next Project</h2>
             <p className={tale}>
               I am available for freelance projects. Hire me and get your
-              project done.
+              project done
             </p>
           </div>
           <Button className={btnAction}>Let’s get in touch</Button>

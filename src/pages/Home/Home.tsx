@@ -3,7 +3,8 @@ import "./style.css";
 import HeroSection from "./HeroSection/HeroSection";
 import WorksSection from "./WorksSection/WorksSection";
 import Ads from "./Ads/Ads";
-import Skills from "@pages/Skills/Skills";
+import Skills from "@pages/Home/Skills/Skills";
+import Contact from "@pages/Home/Contact/Contact";
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
       <WorksSection />
       <Ads />
       <Skills />
+      <Contact />
     </>
   );
 };

@@ -1,6 +1,5 @@
 .sectionArea {
     padding-block: 100px;
-    margin-block-end: 100px;
 
     &.withBG {
         background-color: color-mix(in srgb, var(--color-primary), white 95%);

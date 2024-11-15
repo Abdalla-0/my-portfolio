@@ -1,12 +1,8 @@
-import { Col, Container, NavLink, Row } from "react-bootstrap";
+import { Col, Container,  Row } from "react-bootstrap";
 import styles from "./style.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDownload } from "@fortawesome/free-solid-svg-icons";
-import {
-  faFacebookF,
-  faLinkedinIn,
-  faWhatsapp,
-} from "@fortawesome/free-brands-svg-icons";
+import { faLinkedinIn, faGithub } from "@fortawesome/free-brands-svg-icons";
 
 const {
   heroSection,
@@ -41,22 +37,32 @@ const HeroSection = () => {
                 functional and visually appealing solutions.
               </p>
               <div className={contactBox}>
-                <NavLink className={`btn btn-outline-primary ${btnCV}`}>
+                <a
+                  href={"/public/Abdalla Atef.pdf"}
+                  target="_blank"
+                  className={`btn btn-outline-primary ${btnCV}`}
+                  download={"Abdalla Atef"}
+                >
                   Download CV
                   <span className={btnIcon}>
                     <FontAwesomeIcon icon={faDownload} />
                   </span>
-                </NavLink>
+                </a>
                 <div className={socialsBox}>
-                  <NavLink className={`btn btn-outline-primary ${socialItem}`}>
-                    <FontAwesomeIcon icon={faFacebookF} />
-                  </NavLink>
-                  <NavLink className={`btn btn-outline-primary ${socialItem}`}>
+                  <a
+                    href="https://www.linkedin.com/in/abdalla-atef-ba28b7273/"
+                    target="_blank"
+                    className={`btn btn-outline-primary ${socialItem}`}
+                  >
                     <FontAwesomeIcon icon={faLinkedinIn} />
-                  </NavLink>
-                  <NavLink className={`btn btn-outline-primary ${socialItem}`}>
-                    <FontAwesomeIcon icon={faWhatsapp} />
-                  </NavLink>
+                  </a>
+                  <a
+                    href={"https://github.com/Abdalla-0?tab=repositories"}
+                    target="_blank"
+                    className={`btn btn-outline-primary ${socialItem}`}
+                  >
+                    <FontAwesomeIcon icon={faGithub} />
+                  </a>
                 </div>
               </div>
             </div>
