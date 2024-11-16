@@ -5,57 +5,60 @@ import { faGithub, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPhoneVolume } from "@fortawesome/free-solid-svg-icons";
 const {
-  contactSection,
-  contactSocial,
-  contactSocialItem,
+  contactStart,
+  heading,
+  contactEnd,
+  contactSocialBox,
   itemIcon,
   itemTitle,
 } = styles;
 const Contact = () => {
   return (
     <div className={`sectionArea`}>
-      <Heading title={"Get In Toutch"} />
       <Container>
-        <Row className="g-0 justify-content-center">
-          <Col xs={6}>
-            <div className={`${contactSection}`}>
+        <Row className="g-0 row-gap-5 justify-content-center">
+          <Col md={6}>
+            <div className={`${contactStart}`}>
+              <Heading classExtra={`${heading}`} title={"Get In Toutch"} />
+              <div className={`${contactSocialBox}`}>
+                <FontAwesomeIcon
+                  icon={faPhoneVolume}
+                  className={`btn btn-primary ${itemIcon}`}
+                />
+                <span className={`${itemTitle}`}>+20 1118125994</span>
+              </div>
+              <a
+                href="https://www.linkedin.com/in/abdalla-atef-ba28b7273/"
+                target="_blank"
+                className={`${contactSocialBox}`}
+              >
+                <FontAwesomeIcon
+                  icon={faLinkedinIn}
+                  className={`btn btn-primary ${itemIcon}`}
+                />
+                <span className={`${itemTitle}`}>LinkedIn</span>
+              </a>
+              <a
+                href={"https://github.com/Abdalla-0?tab=repositories"}
+                target="_blank"
+                className={`${contactSocialBox}`}
+              >
+                <FontAwesomeIcon
+                  icon={faGithub}
+                  className={`btn btn-primary ${itemIcon}`}
+                />
+                <span className={`${itemTitle}`}>GitHub</span>
+              </a>
+            </div>
+          </Col>
+          <Col md={6} className="order-first order-md-0">
+            <div className={`${contactEnd}`}>
               <div>
                 <img
                   src="/public/contact.png"
                   className="img-fluid"
                   alt="Contact Image"
                 />
-              </div>
-              <div className={`${contactSocial}`}>
-                <div className={`${contactSocialItem}`}>
-                  <FontAwesomeIcon
-                    icon={faPhoneVolume}
-                    className={`btn btn-primary ${itemIcon}`}
-                  />
-                  <span className={`${itemTitle}`}>+20 1118125994</span>
-                </div>
-                <a
-                  href="https://www.linkedin.com/in/abdalla-atef-ba28b7273/"
-                  target="_blank"
-                  className={`${contactSocialItem}`}
-                >
-                  <FontAwesomeIcon
-                    icon={faLinkedinIn}
-                    className={`btn btn-primary ${itemIcon}`}
-                  />
-                  <span className={`${itemTitle}`}>LinkedIn</span>
-                </a>
-                <a
-                  href={"https://github.com/Abdalla-0?tab=repositories"}
-                  target="_blank"
-                  className={`${contactSocialItem}`}
-                >
-                  <FontAwesomeIcon
-                    icon={faGithub}
-                    className={`btn btn-primary ${itemIcon}`}
-                  />
-                  <span className={`${itemTitle}`}>GitHub</span>
-                </a>
               </div>
             </div>
           </Col>
