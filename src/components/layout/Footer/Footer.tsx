@@ -1,11 +1,18 @@
+import { Link } from "react-router-dom";
 import styles from "./styles.module.css";
-const { footer, copyRights } = styles;
+import BrandIcon from "@assets/svg/brand.svg?react";
+const { footer,logoName, copyRights , copyRightsBrand } = styles;
 const Footer = () => {
   return (
-    <div className={footer}>
-      <h1>Footer</h1>
-      <div className={copyRights}>© 2024 Our Ecom. All rights reserved.</div>
-    </div>
+    <footer>
+      <div className={footer}>
+        <Link className={`logoContainer`} to="/">
+          <BrandIcon />
+          <h2 className={`${logoName}`}>Abdalla</h2>
+        </Link>
+        <div className={copyRights}>© 2024 <span className={copyRightsBrand}>ABDALLA</span>. All rights reserved.</div>
+      </div>
+    </footer>
   );
 };
 

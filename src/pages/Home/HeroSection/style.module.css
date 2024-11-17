@@ -6,8 +6,9 @@
     &::before {
         content: "HI";
         position: absolute;
-        inset-inline-start: 37%;
+        inset-inline-start: 20%;
         top: 10%;
+        transform: translateX(-50%);
         font-size: 200px;
         font-family: "Russo One", sans-serif;
         z-index: -1;
@@ -16,6 +17,18 @@
         -webkit-text-stroke-color: var(--color-primary);
         opacity: .16;
         animation: 6s flash infinite alternate ease-in-out;
+        @media (min-width: 576px) {
+            inset-inline-start: 50%;
+        }
+        @media (min-width: 992px) {
+            inset-inline-start: 32%;
+        }
+        @media (min-width: 1200px) {
+            inset-inline-start: 37%;
+        }
+        @media (min-width: 1400px) {
+            inset-inline-start: 40%;
+        }
     }
 
     .heroStart {
@@ -93,12 +106,14 @@
         border-radius: 32px;
         transform: rotate(3deg);
         margin-inline: auto;
-        margin-block-start: -32px;
+        margin-block-start: 32px;
         border: 4px solid color-mix(in srgb, var(--color-primary), black 20%);
         transition: var(--transition-primary);
 
         @media (max-width: 767px) {
-            width: 60%;
+            width: 80%;
+            height: 370px;
+            margin-block-start: 25px;
         }
 
         @media (max-width: 575px) {

@@ -1,11 +1,11 @@
 import { Container } from "react-bootstrap";
-import styles from "./style.module.css";
+// import styles from "./style.module.css";
 import { Heading } from "@components/common";
 import Skill from "@components/ui/skill/Skill";
-const { skillsSection } = styles;
+// const { skillsSection } = styles;
 const Skills = () => {
   return (
-    <div className={`sectionArea withBG ${skillsSection}`}>
+    <div id="skillsSection" className={`sectionArea withBG`}>
       <Container>
         <Heading title={"My Skills"} />
         <Skill />

@@ -1,31 +1,22 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import styles from "./style.module.css";
 import SettingsIcon from "@assets/svg/settings.svg?react";
-// styles
-const {
-  settingsMenu,
-  settingsBtn,
-  settingsIcon,
-  show,
-  active,
-  colorItemBox,
-  colorItem,
-  yellow,
-  green,
-  purple,
-  blue,
-} = styles;
+import { useAppDispatch, useAppSelector } from "@store/hook";
+import { setTheme } from "@store/theme/themeSlice";
 
 const Settings = () => {
+  const theme = useAppSelector((state) => state.theme);
+  const dispatch = useAppDispatch();
   const [isMenu, setIsMenu] = useState(false);
-  const [colorName, setColorName] = useState("");
   const handleToggleMenu = () => {
     setIsMenu(!isMenu);
   };
+
+
   const siwtchColorHandler = (bgColor: string, textColor: string) => {
+    dispatch(setTheme({ bgColor, textColor }));
     document.body.style.setProperty("--color-primary", bgColor);
     document.body.style.setProperty("--color-text", textColor);
-    setColorName(bgColor);
   };
   const colorNames = {
     yellow: "#ffb700",
@@ -35,39 +26,40 @@ const Settings = () => {
     dark: "#2b3035",
     light: "#ffffff",
   };
+
+  useEffect(()=> {
+    document.body.style.setProperty("--color-primary", theme.bgColor);
+    document.body.style.setProperty("--color-text", theme.textColor);
+  },[theme])
   return (
-    <div className={`${settingsMenu} ${isMenu ? show : null}`}>
-      <span onClick={handleToggleMenu} className={settingsBtn}>
-        <SettingsIcon className={settingsIcon} />
+    <div className={`${styles.settingsMenu} ${isMenu ? styles.show : null}`}>
+      <span onClick={handleToggleMenu} className={styles.settingsBtn}>
+        <SettingsIcon className={styles.settingsIcon} />
       </span>
-      <div className={colorItemBox}>
+      <div className={styles.colorItemBox}>
         <span
-          className={`${colorItem} ${yellow} ${
-            colorName === colorNames.yellow
-              ? active
-              : colorName === ""
-              ? active
-              : null
+          className={`${styles.colorItem} ${styles.yellow} ${
+            theme.bgColor === colorNames.yellow ? styles.active : ""
           }`}
-          onClick={() => siwtchColorHandler("#ffb700", colorNames.dark)}
+          onClick={() => siwtchColorHandler(colorNames.yellow, colorNames.dark)}
         ></span>
         <span
-          className={`${colorItem} ${green} ${
-            colorName === colorNames.green ? active : null
+          className={`${styles.colorItem} ${styles.green} ${
+            theme.bgColor === colorNames.green ? styles.active : ""
           }`}
-          onClick={() => siwtchColorHandler("#3d9e41", colorNames.light)}
+          onClick={() => siwtchColorHandler(colorNames.green, colorNames.light)}
         ></span>
         <span
-          className={`${colorItem} ${purple} ${
-            colorName === colorNames.purple ? active : null
+          className={`${styles.colorItem} ${styles.purple} ${
+            theme.bgColor === colorNames.purple ? styles.active : ""
           }`}
-          onClick={() => siwtchColorHandler("#673ab7", colorNames.light)}
+          onClick={() => siwtchColorHandler(colorNames.purple, colorNames.light)}
         ></span>
         <span
-          className={`${colorItem} ${blue} ${
-            colorName === colorNames.blue ? active : null
+          className={`${styles.colorItem} ${styles.blue} ${
+            theme.bgColor === colorNames.blue ? styles.active : ""
           }`}
-          onClick={() => siwtchColorHandler("#2196F3", colorNames.light)}
+          onClick={() => siwtchColorHandler(colorNames.blue, colorNames.light)}
         ></span>
       </div>
     </div>

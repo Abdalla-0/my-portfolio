@@ -2,7 +2,7 @@
 
     /* colors  */
     --color-primary: #ffb700;
-    --color-text: "";
+    --color-text: "#2b3035";
     --color-primary-tint-30: color-mix(in srgb, var(--color-primary), white 30%);
     --color-primary-tint-90: color-mix(in srgb, var(--color-primary), white 90%);
     --color-primary-shade-10: color-mix(in srgb, var(--color-primary), black 10%);
@@ -43,4 +43,24 @@ h6 {
     margin: 0;
     padding: 0;
     font-family: "TT Phobos Trial";
+}
+
+
+.logoContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .brandName {
+        font-size: 32px;
+        font-weight: bold;
+        color: var(--color-primary);
+        margin-block-start: -10px;
+    }
+
+    .brandText {
+        font-size: 14px;
+        margin-block-start: -4px;
+    }
 }

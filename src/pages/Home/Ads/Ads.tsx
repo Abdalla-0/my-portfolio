@@ -1,4 +1,4 @@
-import { Button, Container } from "react-bootstrap";
+import {  Container } from "react-bootstrap";
 import styles from "./style.module.css";
 const { adsSection, content, text, title, tale, btnAction } = styles;
 const Ads = () => {
@@ -13,7 +13,7 @@ const Ads = () => {
               project done
             </p>
           </div>
-          <Button className={btnAction}>Let’s get in touch</Button>
+          <a href="#contactSection" className={`btn btn-primary ${btnAction}`}>Let’s get in touch</a>
         </div>
       </Container>
     </div>

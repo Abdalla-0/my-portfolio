@@ -14,7 +14,7 @@ const {
 } = styles;
 const Contact = () => {
   return (
-    <div className={`sectionArea`}>
+    <div id="contactSection" className={`sectionArea`}>
       <Container>
         <Row className="g-0 row-gap-5 justify-content-center">
           <Col md={6}>
@@ -69,3 +69,7 @@ const Contact = () => {
 };
 
 export default Contact;
+
+
+
+

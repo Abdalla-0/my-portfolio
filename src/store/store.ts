@@ -3,6 +3,7 @@ import { configureStore, combineReducers } from '@reduxjs/toolkit'
 
 import projects from './projects/projectsSlice';
 import skills from './skills/skillsSlice';
+import theme from './theme/themeSlice';
 
 import {
   persistStore,
@@ -18,7 +19,7 @@ import storage from 'redux-persist/lib/storage';
 const rootPresistConfig = {
   key: "root",
   storage,
-  // whitelist: ["auth", "cart",]
+  whitelist: ["theme"],
 }
 // const authPresistConfig = {
 //   key: "auth",
@@ -30,6 +31,7 @@ const rootPresistConfig = {
 const rootReducer = combineReducers({
   projects,
   skills,
+  theme,
 })
 
 const presistedReducer = persistReducer(rootPresistConfig, rootReducer)

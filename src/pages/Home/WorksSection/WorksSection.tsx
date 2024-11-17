@@ -3,9 +3,9 @@ import { Project } from "@components/ui";
 import {  Container } from "react-bootstrap";
 const WorksSection = () => {
   return (
-    <div className={`sectionArea withBG`}>
+    <div id="worksSection" className={`sectionArea withBG`}>
       <Container>
-        <Heading title={"Our Recent Work"} />
+        <Heading title={"Recent Work"} />
         <Project/>
       </Container>
     </div>

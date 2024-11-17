@@ -24,7 +24,7 @@ const HeroSection = () => {
     <div className={`${heroSection}`}>
       <Container>
         <Row>
-          <Col md={6}>
+          <Col lg={6}>
             <div className={heroStart}>
               <h3 className={subTitle}>I am Abdalla</h3>
               <h2 className={title}>Web Developer & UI&UX Designer</h2>
@@ -67,7 +67,7 @@ const HeroSection = () => {
               </div>
             </div>
           </Col>
-          <Col md={6}>
+          <Col lg={6}>
             <div className={heroEnd}>
               <div className={heroImg}>
                 <img src="../../../../src/assets/img/me.png" alt="" />
