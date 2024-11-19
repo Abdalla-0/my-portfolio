@@ -42,3 +42,13 @@
         color: var(--color-text);
     }
 }
+
+
+/* navbar mobile  */
+
+.navbar-nav {
+    flex-direction: row;
+    @media (max-width: 575px) {
+        justify-content: space-around;
+    }
+}

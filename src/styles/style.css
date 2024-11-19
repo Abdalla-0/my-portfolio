@@ -6,7 +6,7 @@
     --color-primary-tint-30: color-mix(in srgb, var(--color-primary), white 30%);
     --color-primary-tint-90: color-mix(in srgb, var(--color-primary), white 90%);
     --color-primary-shade-10: color-mix(in srgb, var(--color-primary), black 10%);
-
+    --nav-height: "";
     /* transition  */
     --transition-primary: .3s;
 }
@@ -52,11 +52,24 @@ h6 {
     align-items: center;
     justify-content: center;
 
+    .brandIcon {
+        svg {
+            @media (max-width: 767px) {
+                width: 70px;
+                height: 70px;
+            }
+        }
+
+    }
+
     .brandName {
         font-size: 32px;
         font-weight: bold;
         color: var(--color-primary);
         margin-block-start: -10px;
+        @media (max-width: 767px) {
+            font-size: 20px;
+        }
     }
 
     .brandText {

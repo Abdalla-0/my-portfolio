@@ -1,6 +1,16 @@
 .headerEnd {
-    .btnAction {
-        padding-inline: 28px;
-        padding-block: 10px;
+    @media (max-width: 575px) {
+        margin-inline-start: auto;
     }
+    .btnAction {
+        padding-inline: 16px;
+        padding-block: 8px;
+
+        @media (min-width: 768px) {
+            padding-inline: 28px;
+            padding-block: 10px;
+        }
+        
+    }
+   
 }

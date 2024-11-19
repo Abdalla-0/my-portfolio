@@ -3,9 +3,8 @@ import BrandIcon from "@assets/svg/brand.svg?react";
 const HeaderStart = () => {
   return (
     <Link className="logoContainer" to="/">
-      <BrandIcon />
+      <span className="brandIcon"><BrandIcon /></span>
       <h2 className="brandName">Abdalla</h2>
-      <span className="brandText">FREELANCER</span>
     </Link>
   );
 };

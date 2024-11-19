@@ -21,7 +21,7 @@ const {
 } = styles;
 const HeroSection = () => {
   return (
-    <div className={`${heroSection}`}>
+    <div id="heroSection" className={`${heroSection}`}>
       <Container>
         <Row>
           <Col lg={6}>

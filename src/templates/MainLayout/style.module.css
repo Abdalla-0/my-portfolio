@@ -4,6 +4,11 @@
     flex-direction: column;
     min-height: 100vh;
 
+    /* mobile format  */
+    @media (max-width: 575px) {
+        margin-block-end: var(--nav-height);
+    }
+
     &::before {
         content: "";
         position: absolute;

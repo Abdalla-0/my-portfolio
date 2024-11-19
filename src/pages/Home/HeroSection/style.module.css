@@ -1,7 +1,11 @@
 .heroSection {
     position: relative;
-    padding-block-start: 80px;
+    padding-block-start: 20px;
     padding-block-end: 100px;
+
+    @media (min-width: 768px) {
+        padding-block-start: 80px;
+    }
 
     &::before {
         content: "HI";
@@ -17,15 +21,19 @@
         -webkit-text-stroke-color: var(--color-primary);
         opacity: .16;
         animation: 6s flash infinite alternate ease-in-out;
+
         @media (min-width: 576px) {
             inset-inline-start: 50%;
         }
+
         @media (min-width: 992px) {
             inset-inline-start: 32%;
         }
+
         @media (min-width: 1200px) {
             inset-inline-start: 37%;
         }
+
         @media (min-width: 1400px) {
             inset-inline-start: 40%;
         }
