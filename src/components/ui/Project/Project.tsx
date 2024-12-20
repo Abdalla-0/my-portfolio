@@ -19,17 +19,17 @@ const Project = () => {
       <GridList
         data={data}
         renderItem={(item) => (
-          <Col key={item.id} md={6}>
+          <Col key={item.id} md={3}>
             <div className={project}>
-              <div className={imgBox}>
+              <a href={item.link} className={imgBox}>
                 <img src={item.img} alt="" />
-              </div>
+              </a>
               <div className={imgBox}>
                 <img src={item.img} alt="" />
               </div>
               <div className={text}>
-                <h3 className={`${title}`}>{item.title}</h3>
-                <p className={tale}>{item.description}</p>
+                <a href={item.link} className={`${title}`}>{item.title}</a>
+                <p className={tale} title={tale}>{item.description}</p>
               </div>
             </div>
           </Col>
