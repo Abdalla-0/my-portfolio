@@ -9,6 +9,7 @@ const { project, imgBox, text, title, tale } = styles;
 const Project = () => {
   const dispatch = useAppDispatch();
   const { data } = useAppSelector((state) => state.projects);
+
   useEffect(() => {
     dispatch(actGetProjects());
   }, [dispatch]);

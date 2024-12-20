@@ -55,7 +55,7 @@ const Contact = () => {
             <div className={`${contactEnd}`}>
               <div>
                 <img
-                  src="/public/contact.png"
+                  src="/contact.png"
                   className="img-fluid"
                   alt="Contact Image"
                 />

@@ -9,6 +9,7 @@ const { skill, imgBox, title } = styles;
 const Skill = () => {
   const dispatch = useAppDispatch();
   const { data } = useAppSelector((state) => state.skills);
+
   useEffect(() => {
     dispatch(actGetSkills());
   }, [dispatch]);
