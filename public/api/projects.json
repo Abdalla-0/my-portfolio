@@ -7,9 +7,9 @@
   },
   {
     "id": 2,
-    "img": "/img/projects/drinks.png",
-    "title": "How to make drinks",
-    "description": "Discover unique recipes, mixology tips, and the art of crafting perfect drinks for every occasion"
+    "img": "/img/projects/linkedin.png",
+    "title": "Linkedin Clone",
+    "description": "Developed a LinkedIn-like platform featuring user authentication, and post creation to simulate a professional social network. Utilized React.js, Redux Toolkit, React Router DOM, and Firebase for backend integration. The project enhanced my skills in building scalable, interactive applications and leveraging Firebase for real-time updates and secure data handling"
   },
   {
     "id": 3,
