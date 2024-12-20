@@ -21,14 +21,14 @@ const Project = () => {
         renderItem={(item) => (
           <Col key={item.id} md={3}>
             <div className={project}>
-              <a href={item.link} className={imgBox}>
+              <a href={item.link} className={imgBox} target="_blank">
                 <img src={item.img} alt="" />
               </a>
               <div className={imgBox}>
                 <img src={item.img} alt="" />
               </div>
               <div className={text}>
-                <a href={item.link} className={`${title}`}>{item.title}</a>
+                <a href={item.link} className={`${title}`} target="_blank">{item.title}</a>
                 <p className={tale} title={tale}>{item.description}</p>
               </div>
             </div>
