@@ -15,10 +15,10 @@
   },
   {
     "id": 3,
-    "img": "/img/projects/sweet.png",
-    "title": "How to make desert",
-    "description": "Indulge in delicious dessert recipes, baking tips, and sweet inspiration for every occasion",
-    "link": "#"
+    "img": "/img/projects/crud.png",
+    "title": "CRUD Application",
+    "description": "Developed a dynamic CRUD application using React and TypeScript, enabling seamless data management with create, read, update, and delete functionalities. Integrated with Firebase and designed a responsive, high-performance user interface to meet user needs efficiently.",
+    "link": "https://crud-app-53189.web.app/"
   },
   {
     "id": 4,
