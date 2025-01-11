@@ -1,0 +1,51 @@
+sourses :
+https://preview.themeforest.net/item/portfolify-personal-portfolio-html-template/full_screen_preview/54575228
+https://geroldlight.themejunction.net/
+
+assets : 
+
+-fonts 
+	- TTPhobos for headings
+	- lato for text
+
+- colors  
+	- #ffb700 yellow
+	- #3d9e41 green
+	- #673ab7 purple
+	- #2196F3 blue
+
+- language 
+	- arabic
+	- english
+
+##########################################
+
+sections : 
+
+- header 
+	- brand 
+	- links
+	- hire me button 
+
+- hero section 
+	- image
+	- text
+
+- our works 
+
+- our skills 
+
+- ads
+
+- courses
+
+- brief | about me 
+
+- contact us 
+
+- footer
+
+
+
+
+
