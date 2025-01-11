@@ -4,6 +4,7 @@
     "img": "/img/projects/e-commerce.png",
     "title": "Eccomerce",
     "description": "Your one-stop shop for quality products, exclusive deals, and seamless online shopping",
+    "stack": "React, Typescript, Redux Toolkit, React Router DOM, Axios, Formik, Zod, Bootstrap, Json Placeholder.",
     "link": "https://github.com/Abdalla-0/ecommerce-react-typescript"
   },
   {
@@ -11,6 +12,7 @@
     "img": "/img/projects/linkedin.png",
     "title": "Linkedin Clone",
     "description": "Developed a LinkedIn-like platform featuring user authentication, and post creation to simulate a professional social network. Utilized React.js, Redux Toolkit, React Router DOM, and Firebase for backend integration. The project enhanced my skills in building scalable, interactive applications and leveraging Firebase for real-time updates and secure data handling",
+    "stack": "React, Typescript, Redux Toolkit, React Router DOM, Firebase.",
     "link": "https://linkedin-clone-28b6d.web.app/"
   },
   {
@@ -18,6 +20,7 @@
     "img": "/img/projects/crud.png",
     "title": "CRUD Application",
     "description": "Developed a dynamic CRUD application using React and TypeScript, enabling seamless data management with create, read, update, and delete functionalities. Integrated with Firebase and designed a responsive, high-performance user interface to meet user needs efficiently.",
+    "stack": "React, Typescript, Redux Toolkit, React Router DOM, Firebase.",
     "link": "https://crud-app-53189.web.app/"
   },
   {
@@ -25,6 +28,7 @@
     "title": "Safety Code",
     "img": "/img/projects/programming.png",
     "description": "Professional programming solutions tailored to elevate your business with custom development, expert consulting, and innovative technology",
+    "stack": "Laravel, jQuery, Sass.",
     "link": "#"
   }
 ]

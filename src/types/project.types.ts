@@ -1,1 +1,1 @@
-export type TProject = { id: number, img: string, title: string, description: string, link: string};
+export type TProject = { id: number, img: string, title: string, description: string, stack?: string[], link: string };

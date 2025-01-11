@@ -28,8 +28,17 @@ const Project = () => {
                 <img src={item.img} alt="" />
               </div>
               <div className={text}>
-                <a href={item.link} className={`${title}`} target="_blank">{item.title}</a>
-                <p className={tale} title={tale}>{item.description}</p>
+                <h2>
+                  <a href={item.link} className={`${title}`} target="_blank">
+                    {item.title}
+                  </a>
+                </h2>
+                <p className={tale}>
+                  <span className="fw-bold">Stack:</span> {item.stack}
+                </p>
+                {/* <p className={tale} title={tale}>
+                  {item.description}
+                </p> */}
               </div>
             </div>
           </Col>
